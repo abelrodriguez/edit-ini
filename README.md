@@ -19,4 +19,4 @@ npm run edit-ini
 
 ## License
 
-[GNU General Public License v2.0](LICENSE.md)
+[GNU General Public License v2.0](LICENSE)
