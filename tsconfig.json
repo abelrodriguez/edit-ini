@@ -1,7 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -9,16 +10,24 @@
     "experimentalDecorators": true,
     "allowJs": false,
     "target": "es5",
-    "sourceRoot": "src",
+    "paths": {
+      "environments": [
+        "./environments"
+      ]
+    },
+    "types": [
+      "node",
+      "jasmine"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],
-    "lib": [ "es2017", "dom" ]
+    "lib": [
+      "es2016",
+      "dom"
+    ]
   },
   "exclude": [
-    "node_modules",
-    "dist"
-  ],
-  "atom": { "rewriteTsconfig": false }
-
+    "node_modules"
+  ]
 }
