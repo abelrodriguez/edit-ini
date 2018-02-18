@@ -31,10 +31,9 @@
     "e2e": "protractor ./protractor.conf.js"
   },
   "dependencies": {
-    "@types/core-js": "^0.9.46",
-    "mysql": "^2.15.0",
-    "reflect-metadata": "^0.1.12",
-    "typeorm": "^0.1.12"
+    "mysql": "2.15.0",
+    "reflect-metadata": "0.1.12",
+    "typeorm": "0.1.12"
   },
   "devDependencies": {
     "@angular/cli": "1.6.4",
@@ -52,7 +51,8 @@
     "@ngx-translate/http-loader": "2.0.0",
     "@types/jasmine": "2.5.54",
     "@types/jasminewd2": "2.0.2",
-    "@types/node": "^7.0.7",
+    "@types/node": "7.0.7",
+    "@types/core-js": "0.9.34",
     "autoprefixer": "7.1.4",
     "circular-dependency-plugin": "3.0.0",
     "codelyzer": "3.2.0",
