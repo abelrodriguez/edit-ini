@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LoggerService } from './logger.service';
 import { ElectronService } from './electron.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
+import { ConnectionbdService } from './connectionbd.service';
 
 @NgModule({
   imports: [
@@ -13,6 +14,7 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
   declarations: [],
   providers: [
     LoggerService,
+    ConnectionbdService,
     ElectronService
   ]
 })
