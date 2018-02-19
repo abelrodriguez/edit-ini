@@ -20,6 +20,7 @@
     "icon": "dist",
     "target": [
       "AppImage"
+      
     ]
   }
 }

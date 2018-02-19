@@ -21,6 +21,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss"
+        
       ],
       "scripts": [
       ],
