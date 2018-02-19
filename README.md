@@ -14,7 +14,7 @@ cd edit-ini
 # Install dependencies
 npm install
 # Run the app
-npm run edit-ini
+npm run start
 ```
 
 ## License
