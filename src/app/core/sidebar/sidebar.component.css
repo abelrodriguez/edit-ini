@@ -1,0 +1,14 @@
+.sidebar {
+    overflow: hidden;
+    position: absolute;
+    background-color: lightgreen;
+    /* width: 35%; */
+    float: left;
+    height: 100%;
+}
+
+
+.no-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}

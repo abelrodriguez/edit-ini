@@ -5,12 +5,13 @@ import { LoggerService } from './logger.service';
 import { ElectronService } from './electron.service';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { ConnectionbdService } from './connectionbd.service';
+import { SidebarModule } from './sidebar/sidebar.module';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  exports: [],
+  exports: [ SidebarModule ],
   declarations: [],
   providers: [
     LoggerService,

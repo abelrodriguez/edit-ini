@@ -13,11 +13,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { CoreModule } from './core/core.module';
-
 import { WebviewDirective } from 'app/directives/webview.directive';
-
 import { AppComponent } from './app.component';
+
+// Imports modules
+import { CoreModule } from './core/core.module';
 import { HomeModule } from './components/home/home.module';
 
 // AoT requires an exported function for factories

@@ -4,10 +4,8 @@ import { HomeService } from './home.service';
 import { HomeComponent } from './home.component';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [HomeComponent],
-  providers: [HomeService]
+  imports: [ CommonModule ],
+  declarations: [ HomeComponent ],
+  providers: [ HomeService ]
 })
 export class HomeModule { }
