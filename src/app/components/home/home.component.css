@@ -1,0 +1,12 @@
+div {
+  background-color: lightpink;
+}
+
+.content {
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  float: left;
+  /* width: 65%; */
+}
