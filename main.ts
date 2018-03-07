@@ -1,6 +1,6 @@
 import { app, BrowserWindow, screen } from 'electron';
 import * as path from 'path';
-import "reflect-metadata";
+import 'reflect-metadata';
 
 let win, serve;
 const args = process.argv.slice(1);
