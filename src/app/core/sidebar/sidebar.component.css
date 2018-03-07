@@ -1,14 +1,65 @@
+
+
 .sidebar {
-    overflow: hidden;
-    position: absolute;
-    background-color: lightgreen;
-    /* width: 35%; */
+    /* background-color: lightgreen; */
     float: left;
     height: 100%;
+    border-right: 1px solid #e6e6e6;
 }
 
 
 .no-padding {
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+
+.sidebar .filelist {
+    overflow-y: scroll;
+    
+    height: calc(100% - 55px);
+    
+    
+}
+
+
+.file {
+    margin-bottom: 0;
+}
+
+
+.file-values {
+    display: block;
+    border: 1px solid #ddd;
+    
+    border-bottom-width: 0;
+    max-height: 80px;
+    min-height: 80px;
+    
+    padding: 10px 15px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+
+.file:last-child .file-values{
+    border-bottom-width: 1px;
+}
+
+.heading {
+    line-height: 1.1;
+    margin-bottom: 5px;
+    font-size: 18px;
+    max-width: 80%;
+}
+
+a.file-values {
+    color: #333;
+}
+
+.file-obs {
+    max-width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }

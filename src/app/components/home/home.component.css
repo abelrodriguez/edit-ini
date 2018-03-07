@@ -1,5 +1,5 @@
 div {
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 
 .content {
@@ -7,6 +7,7 @@ div {
   right: 0;
   height: 100%;
   position: absolute;
-  float: left;
+  float: right;
+  overflow-y: scroll;
   /* width: 65%; */
 }

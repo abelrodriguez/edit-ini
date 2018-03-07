@@ -1,8 +1,14 @@
 <div class="sidebar col-12 col-md-4 no-padding">
   <app-navbar></app-navbar>
+  <button name="Start" (click)='getFileList()'>Start</button>
 
-  <div>
-    Sidebar
+  <div class="filelist">
+    <div class="file" *ngFor="let file of filelist" (click)="openFile(file.file_pk)">
+      <a href="#" class="file-values">
+      <h4 class="heading">{{ file.item_name }}</h4>
+        <p class="file-obs">{{ file.description }}</p>
+      </a>
+    </div>
   </div>
   
-</div>>
+</div>

@@ -1,3 +1,26 @@
-.navbar {
-    background-color: khaki;
+.my-navbar {
+    /* background-color: khaki; */
+    height: 55px;
+}
+
+.header-icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #333;
+}
+.header-title {
+    margin-left: 15px;
+}
+
+
+.navbar-left {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.navbar-right {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }

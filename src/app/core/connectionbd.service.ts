@@ -1,46 +1,58 @@
 import { Injectable } from '@angular/core';
 import { createConnection, Connection } from 'typeorm';
-import { Items } from '../shared/models';
+import { Items, Files, Filetype } from '../shared/models';
 
 @Injectable()
 export class ConnectionbdService {
 
   conn_mysql: Connection;
 
+
   constructor() {
-    console.log("connectionbd.service/constructor/IN");
-
     this.connect();
-
-    console.log("connectionbd.service/constructor/OUT");
   }
 
   async connect() {
-    console.log("connectionbd.service/connect/IN");
 
     if (this.conn_mysql == null) {
       this.conn_mysql =  await createConnection({
-        type: "mysql",
-        host: "localhost",
+        name: 'mysql',
+        type: 'mysql',
+        host: 'localhost',
         port: 3306,
-        username: "editini",
-        password: "",
-        database: "edit-ini",
-        entities: [Items]
+        username: 'editini',
+        password: '',
+        database: 'edit-ini',
+        synchronize: true,
+        entities: [ Items, Files, Filetype ]
       });
 
+    //   createConnection({
+    //     name: 'mysql',
+    //     type: 'mysql',
+    //     host: 'localhost',
+    //     port: 3306,
+    //     username: 'editini',
+    //     password: '',
+    //     database: 'edit-ini',
+    //     entities: [ Items, Files, Filetype ],
+    //     synchronize: true
+    //   }).then(conn => {
+    //     console.log('Connected!');
+    //     this.conn_mysql = conn;
+    //   }).catch(error => {
+    //     console.log('Connection error: ' + error);
+    //   });
+
     } else {
-      console.log("Mysql is already connected.")
+      console.log('Mysql is already connected.')
     }
 
-
-    if (this.conn_mysql.isConnected) {
-      console.log("Mysql Connected!");
+    if (this.conn_mysql != null) {
+      if (this.conn_mysql.isConnected) {
+        console.log('Mysql Connected!');
+      }
     }
-
-    console.log("connectionbd.service/connect/OUT");
   }
-
-
 
 }
