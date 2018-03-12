@@ -14,6 +14,5 @@ export class HomeComponent implements OnInit {
   }
 
   connectByService() {
-    this.homeService.getItems();
   }
 }

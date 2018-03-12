@@ -8,14 +8,4 @@ export class HomeService {
 
   constructor() { }
 
-  async getItems() {
-    let conn = getConnection();
-
-    let item = await conn.getRepository(Items).findOneById(11);
-
-    console.log(item);
-
-
-  }
-
 }

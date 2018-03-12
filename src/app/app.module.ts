@@ -19,6 +19,8 @@ import { AppComponent } from './app.component';
 // Imports modules
 import { CoreModule } from './core/core.module';
 import { HomeModule } from './components/home/home.module';
+import { EditorModule } from './components/editor/editor.module';
+import { ViewerModule } from './components/viewer/viewer.module';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -37,6 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     CoreModule,
     HomeModule,
+    EditorModule,
+    ViewerModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SidebarService } from './sidebar.service';
 import { Files } from '../../shared/models';
 import { Router } from '@angular/router';
@@ -28,8 +28,5 @@ export class SidebarComponent implements OnInit {
     });
   }
 
-  openFile(file_pk: number) {
-    this.router.navigate( ['/editor', file_pk ]);
-  }
 
 }

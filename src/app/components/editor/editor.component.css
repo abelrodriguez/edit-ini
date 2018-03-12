@@ -1,0 +1,23 @@
+.content {
+    top: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    float: right;
+    overflow-y: scroll;
+    /* width: 65%; */
+  }
+
+  .detail {
+    position: absolute;
+    height: auto;
+    background-color: aqua;
+  }
+
+  .groups {
+    background-color: darkkhaki;
+  }
+
+  .items {
+    background-color: darkslategray;
+  }
